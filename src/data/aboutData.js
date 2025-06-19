@@ -1,6 +1,6 @@
 export const aboutData = {
     title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
+    description1: "My name's Nikhil Murali. I'm currently pursuing my masters in computer science at the University at Buffalo. I'm also interning at Empire State Realty Trust as a AI Engineer trying to solve their business problem using AI. I'm also a full stack developer and a machine learning engineer. I'm a quick learner and I'm always looking for new challenges.",
+    description2: "I'm a quick learner and I'm always looking for new challenges.",
     image: 2
 }
