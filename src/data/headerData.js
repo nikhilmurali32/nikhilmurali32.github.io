@@ -4,6 +4,6 @@ export const headerData = {
     name: 'NIKHIL MURALI',
     title: "AI Engineer & Software Developer",
     desciption:"I'm a quick learner and I'm always looking for new challenges.",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    image: 'https://github.com/nikhilmurali32/developer-portfolio/blob/master/src/assets/png/55f29d04-0117-4fda-9cda-9e0aca17d91b%20Copy-EDIT.jpg',
     resumePdf: resume
 }
