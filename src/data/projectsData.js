@@ -15,13 +15,13 @@ export const projectsData = [
         projectDesc: 'This is a personalized conversational AI system built for Alternative and Augmentative Communication (AAC) users',
         tags: ['Flan T5', 'FAISS', 'Mistral LLM', 'Flask', 'React'],
         code: 'https://github.com/MNikhilBharath/AAC-Communication',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        // demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: one
     },
     {
         id: 2,
-        projectName: 'NoteWiz: An AI-Powered Study Assistant ',
-        projectDesc: 'A real-time study material generation app that generates summaries, flashcard and quizzes based on any uploaded document. ',
+        projectName: 'NoteWiz ',
+        projectDesc: 'An AI-Powered Study Assistant that generates summaries, flashcard and quizzes based on any uploaded document. ',
         tags: ['Streamlit', 'Mistral LLM', 'Few-shot prompting'],
         code: 'https://github.com/MNikhilBharath/AI4good-notewiz',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
