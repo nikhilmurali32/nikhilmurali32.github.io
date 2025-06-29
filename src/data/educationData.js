@@ -4,7 +4,7 @@ export const educationData = [
         institution: 'University at Buffalo, State University of New York',
         course: 'Master of Science in Computer Science',
         startYear: '2024',
-        endYear: '2025'
+        endYear: 'Present'
     },
     {
         id: 2,

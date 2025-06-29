@@ -11,19 +11,19 @@ import eight from '../assets/svg/projects/eight.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'AAC Communication',
+        projectDesc: 'This is a personalized conversational AI system built for Alternative and Augmentative Communication (AAC) users',
+        tags: ['Flan T5', 'RAG', 'FAISS', 'Mistral LLM', 'Flask', 'React'],
+        code: 'https://github.com/MNikhilBharath/AAC-Communication',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: one
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'NoteWiz: An AI-Powered Study Assistant ',
+        projectDesc: 'A real-time study material generation app that generates summaries, flashcard and quizzes based on any uploaded document. ',
+        tags: ['Streamlit', 'Mistral LLM', 'Few-shot prompting'],
+        code: 'https://github.com/MNikhilBharath/AI4good-notewiz',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: two
     },
