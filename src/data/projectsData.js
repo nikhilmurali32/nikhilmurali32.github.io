@@ -13,7 +13,7 @@ export const projectsData = [
         id: 1,
         projectName: 'AAC Communication',
         projectDesc: 'This is a personalized conversational AI system built for Alternative and Augmentative Communication (AAC) users',
-        tags: ['Flan T5', 'RAG', 'FAISS', 'Mistral LLM', 'Flask', 'React'],
+        tags: ['Flan T5', 'FAISS', 'Mistral LLM', 'Flask', 'React'],
         code: 'https://github.com/MNikhilBharath/AAC-Communication',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         image: one
