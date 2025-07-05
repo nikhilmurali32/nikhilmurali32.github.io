@@ -9,12 +9,10 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaCode,
 } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -107,36 +105,10 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaCode
+                                <SiLeetcode
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='LeetCode'
-                                />
-                            </a>
-                        )}
-                        {socialsData.twitter && (
-                            <a
-                                href={socialsData.twitter}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaTwitter
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
                                 />
                             </a>
                         )}

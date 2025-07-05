@@ -5,6 +5,7 @@ import girl3 from '../assets/svg/testimonials/girl3.svg'
 import boy1 from '../assets/svg/testimonials/boy1.svg'
 import boy2 from '../assets/svg/testimonials/boy2.svg'
 import boy3 from '../assets/svg/testimonials/boy3.svg'
+import manager from '../assets/svg/testimonials/manager.svg'
 
 
 
@@ -14,7 +15,7 @@ export const testimonialsData = [
         name: 'Vishal Arora',
         title: 'Development Manager at Standard Chartered Bank Singapore',
         text: "Nikhil was directly working under me for over three years at Standard Chartered before he moved to the US for his higher studies. He majorly worked on Kong API gateway, wherein despite the high learning curve and limited resources, he quickly became self-reliant on the entire operation. He undertook multiple end-to-end project deliveries to the satisfaction of the stakeholders. Throughout our time together, I found Nikhil to be technically savvy who adapted well to new technologies and completed tasks with minimal guidance. I can assure you that Nikhil would be a great asset to any organization.",
-        image: boy2,
+        image: manager,
         linkedin: 'https://www.linkedin.com/in/evishalarora/'
     },
     // {

@@ -86,20 +86,14 @@ function Testimonials() {
                                             >
                                                 <p>{test.text}</p>
                                                 <h1>{test.name}</h1>
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                                <div className="title-linkedin-container">
                                                     <h4>{test.title}</h4>
                                                     {test.linkedin && (
                                                         <a
                                                             href={test.linkedin}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            style={{ 
-                                                                color: theme.primary,
-                                                                fontSize: '1.2rem',
-                                                                transition: 'transform 0.2s ease-in-out'
-                                                            }}
-                                                            onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
-                                                            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                                                            className="linkedin-icon"
                                                         >
                                                             <FaLinkedin />
                                                         </a>

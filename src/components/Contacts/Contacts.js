@@ -5,18 +5,16 @@ import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    FaTwitter,
     FaLinkedinIn,
     FaGithub,
-    FaYoutube,
     FaRedditAlien,
     FaStackOverflow,
     FaCodepen,
     FaInstagram,
     FaGitlab,
     FaMediumM,
-    FaCode,
 } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -313,16 +311,6 @@ function Contacts() {
                         </div>
 
                         <div className='socialmedia-icons'>
-                            {socialsData.twitter && (
-                                <a
-                                    href={socialsData.twitter}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaTwitter aria-label='Twitter' />
-                                </a>
-                            )}
                             {socialsData.github && (
                                 <a
                                     href={socialsData.github}
@@ -340,7 +328,7 @@ function Contacts() {
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaCode aria-label='LeetCode' />
+                                    <SiLeetcode aria-label='LeetCode' />
                                 </a>
                             )}
                             {socialsData.linkedIn && (
@@ -371,17 +359,6 @@ function Contacts() {
                                     className={classes.socialIcon}
                                 >
                                     <FaMediumM aria-label='Medium' />
-                                </a>
-                            )}
-
-                            {socialsData.youtube && (
-                                <a
-                                    href={socialsData.youtube}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaYoutube aria-label='YouTube' />
                                 </a>
                             )}
                             {socialsData.reddit && (
