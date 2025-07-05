@@ -75,7 +75,12 @@ import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
-
+// Adding the newly created skill imports
+import flask from '../assets/svg/skills/flask.svg'
+import kafka from '../assets/svg/skills/kafka.svg'
+import kubernetes from '../assets/svg/skills/kubernetes.svg'
+import linux from '../assets/svg/skills/linux.svg'
+import nodejs from '../assets/svg/skills/nodejs.svg'
 
 
 export const skillsImage = (skill) => {
@@ -229,15 +234,19 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
-        // For missing skill logos, return a default icon
+        // Using the newly created skill logos
         case 'flask':
+            return flask;
         case 'kafka':
+            return kafka;
         case 'kubernetes':
+            return kubernetes;
         case 'linux':
+            return linux;
         case 'nodejs':
+            return nodejs;
         case 'node js':
-            // Return a default icon (using python as fallback since it's a common programming language)
-            return python;
+            return nodejs;
         default:
             // Return a default icon for any other missing skills
             return python;
