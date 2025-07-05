@@ -76,6 +76,8 @@ import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 import canva from '../assets/svg/skills/canva.svg'
 
 
+
+
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
@@ -227,7 +229,17 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        // For missing skill logos, return a default icon
+        case 'flask':
+        case 'kafka':
+        case 'kubernetes':
+        case 'linux':
+        case 'nodejs':
+        case 'node js':
+            // Return a default icon (using python as fallback since it's a common programming language)
+            return python;
         default:
-            break;
+            // Return a default icon for any other missing skills
+            return python;
     }
 }
