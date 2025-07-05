@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 
 import Slider from 'react-slick';
 
-import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaQuoteLeft, FaArrowRight, FaArrowLeft, FaLinkedin } from 'react-icons/fa';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
@@ -86,7 +86,25 @@ function Testimonials() {
                                             >
                                                 <p>{test.text}</p>
                                                 <h1>{test.name}</h1>
-                                                <h4>{test.title}</h4>
+                                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                                    <h4>{test.title}</h4>
+                                                    {test.linkedin && (
+                                                        <a
+                                                            href={test.linkedin}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            style={{ 
+                                                                color: theme.primary,
+                                                                fontSize: '1.2rem',
+                                                                transition: 'transform 0.2s ease-in-out'
+                                                            }}
+                                                            onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
+                                                            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                                                        >
+                                                            <FaLinkedin />
+                                                        </a>
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
