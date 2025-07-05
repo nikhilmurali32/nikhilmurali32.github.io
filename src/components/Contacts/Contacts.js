@@ -15,6 +15,7 @@ import {
     FaInstagram,
     FaGitlab,
     FaMediumM,
+    FaCode,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -330,6 +331,16 @@ function Contacts() {
                                     className={classes.socialIcon}
                                 >
                                     <FaGithub aria-label='GitHub' />
+                                </a>
+                            )}
+                            {socialsData.leetcode && (
+                                <a
+                                    href={socialsData.leetcode}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaCode aria-label='LeetCode' />
                                 </a>
                             )}
                             {socialsData.linkedIn && (

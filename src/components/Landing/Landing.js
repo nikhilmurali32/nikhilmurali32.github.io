@@ -13,6 +13,7 @@ import {
     FaLinkedin,
     FaGithub,
     FaYoutube,
+    FaCode,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -97,6 +98,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='GitHub'
+                                />
+                            </a>
+                        )}
+                        {socialsData.leetcode && (
+                            <a
+                                href={socialsData.leetcode}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaCode
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='LeetCode'
                                 />
                             </a>
                         )}
