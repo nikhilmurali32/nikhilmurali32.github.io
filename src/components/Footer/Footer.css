@@ -16,3 +16,19 @@
 .footer p span {
     font-size: 24px;
 }
+
+@media screen and (max-width: 600px) {
+    .footer {
+        height: 50px;
+        padding: 0 1rem;
+    }
+    
+    .footer p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .footer p span {
+        font-size: 20px;
+    }
+}

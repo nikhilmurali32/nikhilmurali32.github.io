@@ -134,7 +134,10 @@
 }
 
 @media screen and (max-width: 600px){
-
+  .about {
+    padding: 1rem;
+  }
+  
   .about .line-styling .style-circle{
     width: 5px;
     height: 5px;
@@ -147,14 +150,27 @@
   }
 
   .about-description > h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
-    .about-description > p{
-      font-size: 0.95rem;
-    }
+  .about-description > p{
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
+  }
 
-    .about-img > img {
-        width: 200px;
-    }
+  .about-img > img {
+      width: 180px;
+  }
+  
+  .about-body {
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .about-description {
+    padding: 1rem;
+  }
 }

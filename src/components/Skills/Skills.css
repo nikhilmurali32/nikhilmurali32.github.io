@@ -137,24 +137,39 @@
 }
 
 @media screen and (max-width: 600px) {
+    .skills {
+        padding: 1rem 0.5rem;
+        min-height: auto;
+    }
+    
     .skill--box {
-        width: 135px;
-        height: 135px;
-        margin: 1.2rem;
-        padding: 2rem 1rem;
+        width: 120px;
+        height: 120px;
+        margin: 0.8rem;
+        padding: 1.5rem 0.5rem;
     }
 
     .skill--box > img {
-        height: 40px;
+        height: 35px;
     }
 
     .skillsHeader h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
     }
 
     .skill--box h3 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-top: 0.8rem;
+    }
+    
+    .skillsContainer {
+        padding: 0.5rem;
         margin-top: 1rem;
+    }
+    
+    .skill--scroll {
+        margin: 0 0.5rem;
     }
 }
 

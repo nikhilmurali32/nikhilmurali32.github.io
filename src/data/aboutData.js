@@ -1,6 +1,6 @@
 export const aboutData = {
     title: "Who am I?",
-    description1: "Hey there — I’m Nikhil Murali. A curious mind at the intersection of code and creativity. Currently diving deep into my Master’s in Computer Science at the University at Buffalo and shaping smart solutions as an AI Engineering Intern at Empire State Realty Trust.",
-    description2: "I build things that work — and think. From full-stack apps that run seamlessly to machine learning models that make sense of the chaos, I’m driven by a love for learning and a knack for tackling real-world problems with tech.",
+    description1: "Hi, I’m Nikhil Murali — a builder at heart with a passion for turning ideas into technology that works and thinks. I’m currently pursuing my Master’s in Computer Science at the University at Buffalo and working as an AI Engineering Intern at Empire State Realty Trust, where I help develop AI-powered solutions to enhance the company's operations.",
+    description2: "With experience across full-stack development, cloud infrastructure, and applied AI, I enjoy crafting everything from seamless web applications to machine learning models that bring structure to complexity. At the core, I’m driven by curiosity, creativity, and a love for solving real-world problems through thoughtful, practical tech.",
     image: 2
 }

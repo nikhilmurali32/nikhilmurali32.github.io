@@ -7,12 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
     FaLinkedinIn,
     FaGithub,
-    FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
-    FaInstagram,
-    FaGitlab,
-    FaMediumM,
 } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
@@ -321,16 +315,6 @@ function Contacts() {
                                     <FaGithub aria-label='GitHub' />
                                 </a>
                             )}
-                            {socialsData.leetcode && (
-                                <a
-                                    href={socialsData.leetcode}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <SiLeetcode aria-label='LeetCode' />
-                                </a>
-                            )}
                             {socialsData.linkedIn && (
                                 <a
                                     href={socialsData.linkedIn}
@@ -341,64 +325,14 @@ function Contacts() {
                                     <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
                             )}
-                            {socialsData.instagram && (
+                            {socialsData.leetcode && (
                                 <a
-                                    href={socialsData.instagram}
+                                    href={socialsData.leetcode}
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaInstagram aria-label='Instagram' />
-                                </a>
-                            )}
-                            {socialsData.medium && (
-                                <a
-                                    href={socialsData.medium}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaMediumM aria-label='Medium' />
-                                </a>
-                            )}
-                            {socialsData.reddit && (
-                                <a
-                                    href={socialsData.reddit}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaRedditAlien aria-label='Reddit' />
-                                </a>
-                            )}
-                            {socialsData.stackOverflow && (
-                                <a
-                                    href={socialsData.stackOverflow}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaStackOverflow aria-label='Stack Overflow' />
-                                </a>
-                            )}
-                            {socialsData.codepen && (
-                                <a
-                                    href={socialsData.codepen}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaCodepen aria-label='CodePen' />
-                                </a>
-                            )}
-                            {socialsData.gitlab && (
-                                <a
-                                    href={socialsData.gitlab}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaGitlab aria-label='GitLab' />
+                                    <SiLeetcode aria-label='LeetCode' />
                                 </a>
                             )}
                         </div>

@@ -49,6 +49,34 @@ img{
 }
 
 
+/* Mobile-first responsive design */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Touch-friendly button improvements */
+button, a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Better mobile scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
 @media screen and (max-width: 400px) {
   body {
     overflow-x: hidden;

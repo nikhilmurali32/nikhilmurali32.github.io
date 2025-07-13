@@ -16,7 +16,7 @@ export const experienceData = [
     {
         id: 3,
         company: 'Standard Chartered Bank',
-        jobtitle: 'Software Engineer',
+        jobtitle: 'Software Developer',
         startYear: '2021',
         endYear: '2024'
     },
