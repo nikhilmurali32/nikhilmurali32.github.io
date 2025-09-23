@@ -1,5 +1,7 @@
+import awsLogo from '../assets/svg/aws-logo.svg'
+
 export const achievementData = {
-    bio : "Certifications",
+    bio : "",
     achievements : [
         {
             id : 1,
@@ -7,7 +9,8 @@ export const achievementData = {
             details : 'AWS certifications validate your expertise and showcase your ability to transform businesses with AWS technology.',
             date : 'Feb, 2023',
             field : 'AWS',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            image : awsLogo,
+            link : 'https://drive.google.com/file/d/1bJ-btMoG1VpNJhfOlTvoYu3bkOinhT30/view?usp=sharing'
         },
         {
             id : 2,
@@ -15,16 +18,9 @@ export const achievementData = {
             details : 'AWS certifications validate your expertise and showcase your ability to transform businesses with AWS technology.',
             date : 'April, 2023',
             field : 'AWS',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            image : awsLogo,
+            link : 'https://drive.google.com/file/d/19iYdoQp0WvyHXfOSHlswSz3pdjk5htja/view?usp=sharing'
         },
-        {
-            id : 3,
-            title : 'Understanding and Visualizing Data with Python',
-            details : 'This course covers data manipulation, data visualization and predictions using Python.',
-            date : 'May 2020',
-            field : 'University of Michigan',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
-        }
 
     ]
 }

@@ -13,7 +13,7 @@ export const testimonialsData = [
     {
         id: 1,
         name: 'Vishal Arora',
-        title: 'Development Manager at Standard Chartered Bank Singapore',
+        title: 'Delivery Manager, Standard Chartered Singapore',
         text: "Nikhil was directly working under me for over three years at Standard Chartered before he moved to the US for his higher studies. He majorly worked on Kong API gateway, wherein despite the high learning curve and limited resources, he quickly became self-reliant on the entire operation. He undertook multiple end-to-end project deliveries to the satisfaction of the stakeholders. Throughout our time together, I found Nikhil to be technically savvy who adapted well to new technologies and completed tasks with minimal guidance. I can assure you that Nikhil would be a great asset to any organization. (via LinkedIn)",
         image: manager,
         linkedin: 'https://www.linkedin.com/in/evishalarora/'

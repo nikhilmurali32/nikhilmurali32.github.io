@@ -1,99 +1,88 @@
-.navbar {
-    height: 6.5rem;
-    position: absolute;
+.navbar{
+    position: fixed;
+    top: 0;
+    padding: 0 2rem;
     background-color: transparent;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.navbar--container {
+    color: white;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
     width: 100%;
-    padding: 0 3rem;
-    margin-top: 1rem;
+    box-sizing: border-box;
 }
 
-.navbar--container > h1 {
-    font-family: 'BestermindRegular';
-    color: var(--primary-2);
-    font-size: 2.5rem;
-    user-select: none;
+.navbar--container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navLink--container {
-    margin-top: 5rem;
+.navbar--right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.drawer > .MuiBackdrop-root {
-    background: rgba(33, 33, 33, 0.15) !important;
-    backdrop-filter: blur(20px) !important;
+.navbar--container h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: var(--primaryFont);
 }
 
+.navLink--container{
+    padding: 2rem 0;
+}
 
-@media (max-width:1100px) {
-    .navbar--container{
-        padding: 0 2rem;
-    }
-    .navbar--container > h1{
-        font-size: 2.2rem;
-    }
-    .nav-menu{
-        font-size: 2.2rem;
-        margin-top: -1.5rem;
+.drawer{
+    z-index: 110;
+}
+
+.div-closebtn{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .navbar{
+        padding: 0 1.5rem;
     }
 }
 
-@media (max-width:800px) {
-    .navLink--container {
-        margin-top: 3rem;
-    }
-}
-
-
-@media (max-width:600px) {
-    .navbar {
-        height: 5rem;
-    }
-    .navbar--container {
-        padding: 0 1rem;
-        margin-top: 0.5rem;
-    }
-    .nav-menu{
-        color: var(--primary-2);
-        font-size: 1.8rem;
-    }
-    .navbar--container > h1{
-        font-size: 1.8rem;
-    }
-    .nav-menu:hover{
-        color: var(--primary-2);
-    }
-    .MuiDrawer-paper{
-      border-radius: 0 !important;
-      width: 80% !important;
-    }
-    .navLink--container {
-        margin-top: 2rem;
+@media (max-width: 800px) {
+    .navbar{
         padding: 0 1rem;
     }
-}
-
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
-    .navbar {
-        height: 5rem;
-    }
-    .navbar--container {
-        padding: 0 1rem;
-        margin-top: 0rem;
-    }
-    .navbar--container > h1 {
-        font-size: 1.5rem;
+    
+    .navbar--container h1{
+        font-size: 1.6rem;
     }
 }
+
+@media (max-width: 600px) {
+    .navbar{
+        padding: 0 0.8rem;
+    }
+    
+    .navbar--container h1{
+        font-size: 1.4rem;
+    }
+    
+    .navbar--right {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar{
+        padding: 0 0.5rem;
+    }
+    
+    .navbar--container h1{
+        font-size: 1.2rem;
+    }
+} 

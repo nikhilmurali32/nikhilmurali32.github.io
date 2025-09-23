@@ -134,7 +134,10 @@ function Landing() {
                     >
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
-                        <p>{headerData.desciption}</p>
+                        <p>
+                            <span style={{ color: theme.primary }}>{headerData.descriptionParts.highlight}</span>
+                            <span>{headerData.descriptionParts.normal}</span>
+                        </p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (

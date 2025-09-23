@@ -4,11 +4,11 @@ import Fade from 'react-reveal/Fade';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
-import { AiOutlineFolder } from "react-icons/ai";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import './Achievement.css'
 
-function AchievementCard({id, title, details, date, field, image}) {
+function AchievementCard({id, title, details, date, field, image, link}) {
 
     const { theme } = useContext(ThemeContext);
 
@@ -25,21 +25,22 @@ function AchievementCard({id, title, details, date, field, image}) {
     return (
         <Fade bottom>
            <div key={id} className={`achievement-card ${classes.achievementCard}`}>
-               <div className="achievecard-content">
+                <div className="achievecard-content">
                     <div className="achievecard-details1">
                         <h2 style={{color: theme.tertiary}}>{title}</h2>
-                        <p style={{color: theme.tertiary80}}>{details}</p>
                     </div>
-                    <div className="achievecard-details2" style={{color: theme.primary}}>
-                        <h5>{date}</h5>
-                        <div className="achievecard-field">
-                            <AiOutlineFolder />
-                            <h5>{field}</h5>
-                        </div>   
+                    <div className="achievecard-details2">
+                        <a 
+                            href={link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="certification-link"
+                            style={{color: theme.primary}}
+                        >
+                            <FaExternalLinkAlt />
+                            <span>View Certification</span>
+                        </a>
                     </div>
-                </div> 
-                <div className="achievecard-imgcontainer">
-                    <img src={image} alt="" />
                 </div>
            </div>
         </Fade>

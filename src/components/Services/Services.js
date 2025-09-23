@@ -1,15 +1,10 @@
-import React,{useContext} from 'react';
-
-import { ThemeContext } from '../../contexts/ThemeContext';
+import React from 'react';
 
 // import { servicesData } from '../../data/servicesData';
 
 import './Services.css'
-import SingleService from './SingleService/SingleService';
 
 function Services() {
-
-    const { theme } = useContext(ThemeContext);
     return (
         <>
             {/* {servicesData.length > 0 && (

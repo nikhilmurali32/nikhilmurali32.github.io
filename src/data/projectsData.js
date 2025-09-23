@@ -20,6 +20,24 @@ export const projectsData = [
     },
     {
         id: 2,
+        projectName: 'Order Matching Engine',
+        projectDesc: 'A high-performance C++ order matching engine with sub-microsecond latency, supporting price-time priority, limit/market orders and deterministic crash-replay logging.',
+        tags: ['C++', 'GoogleTest', 'GoogleBenchmark'],
+        code: 'https://github.com/nikhilmurali32/ultra-low-latency-matching-engine',
+        demo: 'https://github.com/nikhilmurali32/ultra-low-latency-matching-engine',
+        image: eight
+    },
+    {
+        id: 3,
+        projectName: 'Toxic Audio Detection',
+        projectDesc: 'A real-time voice chat moderation system for children\'s online games using multimodal LLMs.',
+        tags: ['PyTorch', 'GPT-4o', 'CoT Prompting', 'FastAPI'],
+        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        image: three
+    },
+    {
+        id: 4,
         projectName: 'NoteWiz',
         projectDesc: 'An AI-Powered Study Assistant that generates summaries, flashcard and quizzes based on any uploaded document. ',
         tags: ['Streamlit', 'Mistral LLM', 'Few-shot prompting'],
@@ -28,16 +46,7 @@ export const projectsData = [
         image: two
     },
     {
-        id: 3,
-        projectName: 'Toxic Audio Detection',
-        projectDesc: 'A real-time voice chat moderation system for children’s online games using multimodal LLMs.',
-        tags: ['PyTorch', 'GPT-4o', 'CoT Prompting', 'FastAPI'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: three
-    },
-    {
-        id: 4,
+        id: 5,
         projectName: 'Housing Rental App',
         projectDesc: 'A simple full-stack web application for posting and browsing rental housing listings.',
         tags: ['React', 'Node.js', 'Express', 'SQLite'],
@@ -46,7 +55,7 @@ export const projectsData = [
         image: four
     },
     {
-        id: 5,
+        id: 6,
         projectName: 'RGB-D Salient Object Detection',
         projectDesc: 'Detecting and segmenting the salient from natural scenes by simulating the human visual perception system through BBS-Net strategy.',
         tags: ['Pytorch', 'CNN', 'Matplotlib'],
@@ -55,7 +64,7 @@ export const projectsData = [
         image: five
     },
     {
-        id: 6,
+        id: 7,
         projectName: 'Audio Augmentation using GAN',
         projectDesc: 'Built Deep Convolutional GAN in the PyTorch framework to generate new spectrograms to solve data imbalances in speech emotion datasets.',
         tags: ['Pytorch', 'GAN', 'CNN'],
@@ -64,7 +73,7 @@ export const projectsData = [
         image: six
     },
     {
-        id: 7,
+        id: 8,
         projectName: 'Wikimedia Data Processing',
         projectDesc: 'Wikimedia Data Processing using Kafka in a Java Spring Application.',
         tags: ['Java', 'Spring', 'Kafka'],

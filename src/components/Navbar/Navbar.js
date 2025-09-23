@@ -3,9 +3,8 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
-import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
-import { FaUser, FaFolderOpen } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -13,6 +12,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { ThemeToggle } from '../index';
 
 function Navbar() {
     const { theme, setHandleDrawer } = useContext(ThemeContext);
@@ -137,11 +137,14 @@ function Navbar() {
                     {shortname(headerData.name)}
                 </h1>
 
-                <IoMenuSharp
-                    className={classes.navMenu}
-                    onClick={handleDrawerOpen}
-                    aria-label='Menu'
-                />
+                <div className='navbar--right'>
+                    <ThemeToggle />
+                    <IoMenuSharp
+                        className={classes.navMenu}
+                        onClick={handleDrawerOpen}
+                        aria-label='Menu'
+                    />
+                </div>
             </div>
             <Drawer
                 variant='temporary'
@@ -228,7 +231,6 @@ function Navbar() {
                                 </div>
                             </NavLink>
                         </Fade>
-
 
 
 

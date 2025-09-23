@@ -39,6 +39,7 @@
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
+    position: relative;
 }
 
 .educard-img {
@@ -76,6 +77,66 @@
     font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
+}
+
+.education-location {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    font-family: var(--primaryFont);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.courses-dialog {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    z-index: 1000;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin-left: 1rem;
+    animation: slideInRightHighlight 0.4s ease-out;
+}
+
+.courses-dialog h4 {
+    margin: 0 0 1rem 0;
+    font-family: var(--primaryFont);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.courses-dialog ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.courses-dialog li {
+    margin-bottom: 0.5rem;
+    font-family: var(--primaryFont);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+@keyframes slideInRightHighlight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px) scale(0.95);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(5px) scale(1.02);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .education-image {
@@ -155,6 +216,12 @@
     .education-details > h5 {
         font-size: 1.05rem;
         line-height: 126%;
+    }
+    
+    .education-location {
+        font-size: 0.8rem;
+        bottom: 0.8rem;
+        right: 1rem;
     }
 }
 

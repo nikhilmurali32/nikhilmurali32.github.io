@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 
 import Slider from 'react-slick';
 
-import { FaQuoteLeft, FaArrowRight, FaArrowLeft, FaLinkedin } from 'react-icons/fa';
+import { FaQuoteLeft, FaLinkedin } from 'react-icons/fa';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
@@ -30,13 +30,6 @@ function Testimonials() {
         swipe: true,
     };
 
-    const gotoNext = () => {
-        sliderRef.current.slickNext();
-    };
-
-    const gotoPrev = () => {
-        sliderRef.current.slickPrev();
-    };
 
     return (
         <>
@@ -46,7 +39,7 @@ function Testimonials() {
                     style={{ backgroundColor: theme.primary }}
                 >
                     <div className='testimonials--header'>
-                        <h1 style={{ color: theme.secondary }}>Testimonials</h1>
+                        <h1 style={{ color: theme.secondary }}>Recommendations</h1>
                     </div>
                     <div className='testimonials--body'>
                         <FaQuoteLeft
@@ -85,9 +78,8 @@ function Testimonials() {
                                                 }}
                                             >
                                                 <p>{test.text}</p>
-                                                <h1>{test.name}</h1>
-                                                <div className="title-linkedin-container">
-                                                    <h4>{test.title}</h4>
+                                                <div className="name-linkedin-container">
+                                                    <h1>{test.name}</h1>
                                                     {test.linkedin && (
                                                         <a
                                                             href={test.linkedin}
@@ -99,31 +91,12 @@ function Testimonials() {
                                                         </a>
                                                     )}
                                                 </div>
+                                                <h4>{test.title}</h4>
                                             </div>
                                         </div>
                                     </div>
                                 ))}
                             </Slider>
-                            <button
-                                className='prevBtn'
-                                onClick={gotoPrev}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowLeft
-                                    style={{ color: theme.primary }}
-                                    aria-label='Previous testimonial'
-                                />
-                            </button>
-                            <button
-                                className='nextBtn'
-                                onClick={gotoNext}
-                                style={{ backgroundColor: theme.secondary }}
-                            >
-                                <FaArrowRight
-                                    style={{ color: theme.primary }}
-                                    aria-label='Next testimonial'
-                                />
-                            </button>
                         </div>
                     </div>
                 </div>
