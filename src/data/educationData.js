@@ -23,11 +23,11 @@ export const educationData = [
         startYear: '2017',
         endYear: '2021',
         location: 'India',
-        courses: [
-            'Optimization Systems',
-            'Probability',
-            'Neural Networks',
-            'Signal Processing'
-        ]
+                courses: [
+                    'Optimization Techniques',
+                    'Probability',
+                    'Neural Networks',
+                    'Signal Processing'
+                ]
     }
 ]
