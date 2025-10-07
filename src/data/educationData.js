@@ -2,8 +2,8 @@ export const educationData = [
     {
         id: 1,
         institution: 'University at Buffalo, SUNY',
-        course: 'Masters of Science, in Computer Science',
-        startYear: '2024',
+        course: 'Masters of Science, in Computer Science (Thesis)',
+        startYear: 'Aug 2024',
         endYear: 'Present',
         location: 'Buffalo, NY',
         courses: [
@@ -20,8 +20,8 @@ export const educationData = [
         id: 2,
         institution: 'NITK, Surathkal',
         course: 'Bachelor of Technology in Electrical and Electronics Engineering',
-        startYear: '2017',
-        endYear: '2021',
+        startYear: 'Aug 2017',
+        endYear: 'May 2021',
         location: 'India',
                 courses: [
                     'Optimization Techniques',
